@@ -1,0 +1,31 @@
+body{
+    background-color: #595647;
+    color: whitesmoke;
+   
+}
+h2{
+    color: #5dbcd2;
+}
+ strong{
+     color: yellow;
+ }
+ .image1{
+     width: 280px;
+     height: 180px;
+ }
+ .image{
+     width: 200px;
+     height: 180px;
+ }
+ .italicise{
+     font-style: italic;
+ }
+ a{
+     color: red;
+ }
+ span.a{
+     display: inline;
+ }
+.makeInLine{
+    display: inline;
+}
