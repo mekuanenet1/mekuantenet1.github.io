@@ -1,0 +1,25 @@
+.bulletRemuve{
+    list-style: none;
+    
+}
+h1{
+    color: #c8c137;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+h2{
+    color: #c8c137;    
+    background-color: #f0f0f0;
+   text-decoration: underline;
+}
+.comments{
+    margin-left: 40px;
+    background-color: rgb(240, 240, 136);
+    font-style: italic;
+}
+.alignRight{
+    text-align: right;
+}
+a{
+    color: rgb(116, 116, 9);
+}
