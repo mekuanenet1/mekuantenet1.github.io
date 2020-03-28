@@ -8,3 +8,36 @@ div{
 h1{
     background-color: yellow;
 }
+body > p {
+    font-size: 2em;
+    border: 10px;
+    border-top-width: 5px;
+    border-color: #0a0aff;
+    border-radius: 20px 5px 20px 5px;
+    border-style: solid;
+    background-color: rgb(168, 165, 172);
+    max-width: 300px;
+    /* margin-left: 60%; */
+    margin: auto; /* centering a block*/
+    text-align: center;    
+    position: relative;
+    width: 300px;
+    /* height: 150px; */
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    
+}
+#topmenu li{ /* displaying block elements inline*/
+    display: inline;
+    border: 2px solid gray;
+    margin-right: lem;
+    list-style-type: none;
+    margin-left: 10px; 
+    
+}
+ img{
+    float: right;
+    margin: 0 0 1em 1em;
+   
+
+}

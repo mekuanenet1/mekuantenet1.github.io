@@ -1,0 +1,28 @@
+body{
+    /* margin-left: 300px;
+    margin-right: 300px;
+    border-left-width: 200px;
+    margin-top: 50px; */
+    width: 600px;
+    margin: auto;
+    
+}
+#a, #b{
+     width: 100px;
+     height: 100px;
+     font: 30pt bold Helvetica, Arial, sans-serif;
+     text-align: center;
+     line-height: 100px;
+}
+#a{
+    background-color: lightgreen;
+    float: left;
+    /* text-align: center; */
+}
+#b{
+    background-color: pink;
+    float: right;
+}
+#c{
+    background-color: lightblue;
+}
