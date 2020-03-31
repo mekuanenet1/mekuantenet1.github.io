@@ -65,7 +65,7 @@ var input2 = new Array(1, 4, 5, 2);
 function reverse(input) {
     var reversed = '';
 
-    for (var i = input.length - 1; i >= 0; i--) {
+    for (let i = input.length - 1; i >= 0; i--) {
         reversed += input[i];
     }
     return reversed;
@@ -96,6 +96,10 @@ function filterLongWords(arr, num) {
     }
     return longestList;
 }
+// or.....................................
+// function filterLongWords2(arr, num){
+//     return arr.filter(w=>w.length > num);
+// }
 // 8......................................................................
 function computeSumOfSquares(a1) {
 
@@ -105,6 +109,11 @@ function computeSumOfSquares(a1) {
 }
 const a1 = [1, 2, 3];
 computeSumOfSquares(a1);
+// 0r .........................................
+function computeSumOfSquares2(nums){
+    return nums.map(n => n*n).reduce((s1, s2)=> s1 + s2);
+}
+
 
 //  9......................................................................
 function printOddNumbersOnly(arr) {
@@ -117,6 +126,10 @@ function printOddNumbersOnly(arr) {
     }
     return odds;
 }
+// or .............................................
+function printOddNumbersOnly2(nums){
+    return nums.filter(n =>( n % 2 != 0)).forEach(o => console.log(0))
+}
 
 
 // 10.........................................................................
@@ -128,6 +141,9 @@ function computeSumOfSquaresOfEvensOnly(arr) {
         }
     }
     return sum;
+}
+function computeSumOfSquaresOfEvensOnly2(nums){
+    return nums.filter(n => n % 2 === 0).map( n => n*n).reduce((s1,s2) => s1+s2);
 }
 // 11.........................................................................
 // 11a..............
