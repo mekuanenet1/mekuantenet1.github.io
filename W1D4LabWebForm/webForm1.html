@@ -13,10 +13,10 @@
 <body>
 
     <div class="container" style="font-size: 2em; margin-top: 50px;">
-        <form>
+        <form method="get" action="">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input style="height: 4em;" type="email" class="form-control" id="exampleInputEmail1"
+                <input id="email" style="height: 4em;" type="email" class="form-control" id="exampleInputEmail1"
                     aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
@@ -24,7 +24,7 @@
 
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input style="height: 4em;" type="password" class="form-control" id="exampleInputPassword1"
+                <input id="password" style="height: 4em;" type="password" class="form-control" id="exampleInputPassword1"
                     placeholder="Password"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}">
             </div>
@@ -33,8 +33,8 @@
                 <input style="height: 20px;width: 20px;" type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <!-- <button type="reset" class="btn btn-primary"> Reset</button> -->
+            <button id="submit" class="btn btn-primary">Submit</button>
+            
         </form>
     </div>
     <footer class="alignRight">
@@ -44,6 +44,18 @@
         </a>
        
     </footer>
+    <script>
+        document.getElementById("submit").onclick = function (){
+            let email = document.getElementById("email");
+            let password = document.getElementById("password");
+
+            console.log(email.value);
+            console.log(password.value);           
+
+        };
+       
+
+    </script>
 
 </body>
 

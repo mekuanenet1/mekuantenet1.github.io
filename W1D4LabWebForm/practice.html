@@ -34,7 +34,7 @@
     </div>
     <br>
     <div>
-        <form action="" class="container"
+        <form action="http://www.google.com/search" class="container"
             style="font-size: 2em; width: 600px; background-color: lightblue; margin-left: 50px; padding: 20px;">
             <div style="font-size: 25px;">
                 <label for="">Email</label> <br>
@@ -46,6 +46,7 @@
                 <input type="checkbox">
                 <input type="checkbox">
                 <br>
+                <hr>
                 <label for="">Select One</label><br>
                 <label>
                     <input type="radio" name="cc"> Visa                 
@@ -58,6 +59,7 @@
                     <button>Reset</button>
                 </div> <br>
                 <!-- Drop down element -->
+                <hr>
                 <div>
                     <label for=""> Select</label>
                     <select name="Select[]" size="3" multiple>
@@ -74,8 +76,19 @@
                     </select>
                     <button>Submit</button>
                 </div>
+                <hr>
+                <input type="text" name="username"/>Name<br/>
                
             </div>
+            <hr>
+            <!-- grouping fields -->
+            <fieldset style="font-size: 20px;"> 
+                <legend>Credit cards:</legend> 
+                <input type="radio" name="cc" value="visa" checked="checked" /> Visa
+                <input type="radio" name="cc" value="mastercard" /> MasterCard 
+                <input type="radio" name="cc" value="amex" /> American Express 
+           </fieldset>
+           
         </form>
     </div>
 

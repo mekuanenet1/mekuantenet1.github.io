@@ -26,7 +26,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <a style="color: #ffffff; margin-right: 0em;" class="nav-link" href="#">
-                    <span >Hello!</span>
+                    <span>Hello!</span>
                 </a>
                 <a href="#" class="btn btn-secondary">Sign Out</a>
             </form>
@@ -72,7 +72,7 @@
 
                             <div class="form-group">
                                 <label for="dateSupplied">Date supplied</label>
-                                <input id="dateSupplied" name="dateSupplied" type="date"  class="form-control"
+                                <input id="dateSupplied" name="dateSupplied" type="date" class="form-control"
                                     aria-describedby="dateSuppliedHelp" required="required">
                                 <small id="dateSuppliedHelp" class="form-text text-muted">Enter a valid Date.</small>
                             </div>
@@ -96,8 +96,19 @@
             <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"
                 style="padding-top: 1rem;" />
         </a>
-       
+
     </footer>
+
+    <script>
+        document.getElementById("btnSubmit").onclick = function () {
+            let pnumber = document.getElementById("productNumber");
+            let n = document.getElementById("name");
+            let uprice = document.getElementById("unitPrice");
+            let qstack = document.getElementById("quantityInStock");
+
+            window.alert("Product number = " + pnumber.value + ", " + "Name = " + n.value + ", " + "Unit Price = " + uprice.value + ", " + "Quantity in siock = " + qstack.value);
+        }
+    </script>
 
 </body>
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function display_c() {
+            var refresh = 1000;
+            mytime = setTimeout('display_ct()', refresh)
+        }
+        function display_ct() {
+            var x = new Date();
+            var x1 = x.getFullYear() + "-" + (x.getMonth() + 1) + "-" + x.getDate() + " " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+            document.getElementById('span').innerHTML = x1;
+            display_c();
+        }
+    </script>
+</head>
+
+<body onload=display_ct();>
+
+    <div style="text-align: center;padding-top: 200px;"><span id='span'
+            style="font-size: 5em;color: darkgreen;font-weight: bolder;"></span></div>>
+
+</body>
+
+</html>
