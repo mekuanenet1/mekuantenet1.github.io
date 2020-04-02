@@ -190,24 +190,24 @@ function printFibo(x) {
 // 14.............................................................................
 //    Done in w1d4WebFormLab on both webForm1.html and webForm2.html as the following
 
-// document.getElementById("btnSubmit").onclick = function () {
-//     let pnumber = document.getElementById("productNumber");
-//     let n = document.getElementById("name");
-//     let uprice = document.getElementById("unitPrice");
-//     let qstack = document.getElementById("quantityInStock");
-//     let supp = document.getElementById("supplier");
-//     let dateS = document.getElementById("dateSupplied");
+document.getElementById("btnSubmit").onclick = function () {
+    let pnumber = document.getElementById("productNumber");
+    let n = document.getElementById("name");
+    let uprice = document.getElementById("unitPrice");
+    let qstack = document.getElementById("quantityInStock");
+    let supp = document.getElementById("supplier");
+    let dateS = document.getElementById("dateSupplied");
 
-//     window.alert("Product number = " + pnumber.value + ", " + "Name = " + n.value + ", " + "Unit Price = " + uprice.value + ", " + "Quantity in siock = " + qstack.value + ", " + "Supplier = " + supp.value + ", " + "Date supplied = " + dateS.value);
-// }
-// document.getElementById("submit").onclick = function (){
-//     let email = document.getElementById("email");
-//     let password = document.getElementById("password");
+    window.alert("Product number = " + pnumber.value + ", " + "Name = " + n.value + ", " + "Unit Price = " + uprice.value + ", " + "Quantity in siock = " + qstack.value + ", " + "Supplier = " + supp.value + ", " + "Date supplied = " + dateS.value);
+}
+document.getElementById("submit").onclick = function (){
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
 
-//     console.log(email.value);
-//     console.log(password.value);           
+    console.log(email.value);
+    console.log(password.value);           
 
-// };
+};
 
 // 15.............................................................................
 // Found inside w1d5Lab folder with the name of counterClock.html as
