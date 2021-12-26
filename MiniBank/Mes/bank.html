@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>CS472-MiniBankingApp</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>  
+		<script defer src="bank.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="pos-f-t">
+		
+		  <div class="collapse" id="navbarToggleExternalContent">
+			<div class="bg-dark p-4">
+			  <h5 class="text-white h4">Collapsed content</h5>
+			  <span class="text-muted">Toggleable via the navbar brand.</span>
+			</div>
+		  </div>
+		  <nav class="navbar navbar-dark bg-dark">
+			<p style="color: white; font-size: 30px;">CS472 ::: MiniBanking App</p>
+			<button style="margin-left:auto" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  </nav>
+		</div>
+		<div style="padding-left: 10%; padding-right: 10%;">
+			<h2 style="margin-top: 10px">Bank Account Form</h2>
+			<form id="myform" action="#">
+				<label style="font-weight: bold;">Account No </label>
+				<input required id="accountNo" pattern="01-[0-9]{3}-[0-9]{4}" placeholder="01-XXX-XXXX" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                <small>Your unique account number.</small></br>
+                
+				<label style="margin-top: 10px; font-weight: bold;">Customer Name </label>
+                <input required id="name" placeholder="e.g. John B. Smith" type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                
+				<label style="margin-top: 10px; font-weight: bold;">Type of Account </label>
+				<select id="accounttype" class="form-control">
+					<option selected value="0">Checking</option>
+					<option value="1">Saving</option>
+					<option value="2">Loan</option>
+                </select>
+                
+				<button type="submit" style="margin-top: 10px" id="createbutton" type="button" class="btn btn-primary">Create New Account</button>
+			</form>
+			<ul style="margin-top: 10px" id="list" class="list-group">
+				<li style="text-align: center; font-size: 20px;" class="list-group-item active">List of Customer Acounts</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Form</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="test.js" type="text/javascript"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cerulean/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EmRcsPP774S9MOi4ywB+JXUWjYnBdyInMzG2XsC5siZEUpexqxOMJW358dCYEjPu" crossorigin="anonymous">
+</head>
+
+<body>
+    <div style="background-color: black;">
+        <nav class="navbar navbar-dark bg-primary">
+
+            <a style="padding-right: 2em;" class="navbar-brand" href="#">The eLibrary&#174 ::: a CS472 Demo WebApp
+                Project </a>
+
+            <p style="padding-right: 2em; padding-top: 15px; color: white;">| About Us</p>
+
+            <p style="padding-right: 2em; padding-top: 15px; color: white;">| Virtual Tour</p>
+
+            <a href="">
+                <p style="padding-right: 2em; padding-top: 15px; color: white;">| Book</p>
+            </a>
+
+            <p style="margin-left: auto; padding-top: 15px; color: white;">Welcome, Guest</p>
+        </nav>
+    </div>
+    <div style="padding-left: 10%; padding-right: 10%;">
+        <h2 style="margin-top: 10px">New Book Form</h2>
+        <small>Note: Form fields marked with astrisk(*) are required</small>
+        <hr>
+        <form id="myform">
+            <div>
+                <label style="font-weight: bold;">*Book Title</label>
+                <input required id="title" type="text" class="form-control">
+
+                <div style="width: 50%; float: left;">
+                    <label style="font-weight: bold;">*ISBN</label>
+                    <input required id="isbn"  type="text"
+                        class="form-control">                   
+                    <label style="margin-top: 10px; font-weight: bold;">*Publisher</label>
+                    <input required id="publisher"  type="text"
+                        class="form-control"> 
+                </div>
+                <div style="width: 50%; float: left; padding-left: 20px;">
+                    <label style="font-weight: bold;">*Overdue Fee per day</label>
+                    <input required id="overdue" placeholder="0.00"
+                        type="text" class="form-control">
+                    <small>Enter a valid decimal amount in dollars; (e.g. 1.99)</small></br>
+
+                    <label style="font-weight: bold; margin-top: 1px;">*Date Published</label>
+                    <input required id="date" placeholder="mm/dd/yyyy"
+                        type="text" class="form-control">
+                </div>
+
+
+                <div style="position: relative; margin-left: 80%; margin-top: 150px;">
+                    <br>
+                    <button type="reset" class="btn btn-outline-danger" style="margin-top: 10px; margin-left: 40px;" id="reset" type="button"
+                        class="btn btn-secondary">Reset</button>
+                    <a href="hPabe.html">
+                        <button  type="submit" style="margin-top: 10px" id="submit" type="button" class="btn btn-primary">Save Book</button>
+                    </a>                   
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

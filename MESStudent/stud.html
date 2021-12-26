@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS472-Student Registration Form</title>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script defer src="stud.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Nav Bar .Black...............................................................................-->
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <p style="color: white; font-size: 30px;">CS472 ::: Student Registration Form</p>
+        <button style="margin-left:auto" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- ................................................................................................ -->
+
+    <div style="padding-left: 10%; padding-right: 10%; margin-top: 10px;">
+        <h2>Student Registration</h2>
+
+        <p style="font-weight: bold;" id="date"></p> <!-- Date..........................................-->
+
+
+        <form action="#" id="form">
+            <label for="" style="font-weight: bold; margin-top: 10px;">Student ID</label>
+            <input required id="studentid" pattern="000-[0-9]{2}-[0-9]{4}" placeholder="000-XX-XXXX" type="text"
+                class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            <small>Your Unique Student Identification Number</small><br>
+
+            <label style="margin-top: 10px;" for="" style="font-weight: bold;">First Name</label>
+            <input required id="studentname" placeholder="e.g. John" type="text" class="form-control"
+                aria-label="Username" aria-describedby="basic-addon1">
+
+            <button type="submit" style="margin-top: 20px" id="createbutton" type="button"
+                class="btn btn-primary">Submit</button>
+        </form>
+        
+
+        <ul style="margin-top: 20px" id="list" class="list-group">
+            <li style=" text-align: center; font-size: 30px;" class="list-group-item active">Student Name</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
